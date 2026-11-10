@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="t">
+  <title id="t">Illustration of a chapel with a steeple</title>
+  <rect width="480" height="320" fill="#e8eef5"/>
+  <circle cx="390" cy="70" r="30" fill="#f3d27a"/>
+  <rect y="250" width="480" height="70" fill="#9cc29a"/>
+  <rect x="140" y="150" width="200" height="110" fill="#ffffff" stroke="#1f3a5f" stroke-width="4"/>
+  <polygon points="130,155 240,90 350,155" fill="#1f3a5f"/>
+  <rect x="215" y="60" width="50" height="95" fill="#ffffff" stroke="#1f3a5f" stroke-width="4"/>
+  <polygon points="208,64 240,10 272,64" fill="#1f3a5f"/>
+  <rect x="222" y="200" width="36" height="60" rx="18" fill="#1f3a5f"/>
+  <rect x="165" y="180" width="30" height="40" rx="15" fill="#b8cbe0"/>
+  <rect x="285" y="180" width="30" height="40" rx="15" fill="#b8cbe0"/>
+  <rect x="230" y="85" width="20" height="28" rx="10" fill="#b8cbe0"/>
+</svg>

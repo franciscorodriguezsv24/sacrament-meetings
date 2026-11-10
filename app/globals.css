@@ -1,26 +1,65 @@
 @import "tailwindcss";
 
+/* Design tokens shared across the app. Tailwind utilities read them through @theme. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f8fa;
+  --surface: #ffffff;
+  --foreground: #1b2533;
+  --muted: #4b5768;
+  --primary: #1f3a5f;
+  --primary-light: #e8eef5;
+  --accent: #8a5a00;
+  --border: #d5dbe3;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-heading);
+
+  --spacing-page: 1.5rem;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading), Georgia, serif;
+  color: var(--primary);
+}
+
+/* Visible keyboard focus everywhere. */
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Printing a program: hide site chrome and keep only the program. */
+@media print {
+  body {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-program {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
 }
